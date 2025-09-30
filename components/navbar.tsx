@@ -11,7 +11,7 @@ export function Navbar() {
       <nav className="max-w-7xl mx-auto px-6 flex items-center justify-between glass p-2 rounded-3xl">
         {/* Logo */}
         <div className="flex items-center gap-4">
-          <a href="#home" className="logo-link flex items-center gap-3 no-underline">
+          <a href="/" className="logo-link flex items-center gap-3 no-underline">
             <span className="logo-mark w-10 h-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold">GH</span>
             <span className="logo-text font-serif text-lg text-foreground">Glam Hard</span>
           </a>
@@ -20,22 +20,27 @@ export function Navbar() {
         {/* Desktop links */}
         <ul className="nav-links hidden md:flex items-center gap-6">
           <li>
-            <a href="#services" className="nav-link text-muted-foreground hover:text-primary transition-colors">
+            <a href="#services" className="nav-link text-black hover:text-primary transition-colors">
               Services
             </a>
           </li>
           <li>
-            <a href="#gallery" className="nav-link text-muted-foreground hover:text-primary transition-colors">
+            <a href="#gallery" className="nav-link text-black hover:text-primary transition-colors">
               Gallery
             </a>
           </li>
           <li>
-            <a href="#booking" className="nav-link text-muted-foreground hover:text-primary transition-colors">
+            <a href="#booking" className="nav-link text-black hover:text-primary transition-colors">
               Bookings
             </a>
           </li>
           <li>
-            <a href="#footer" className="nav-link text-muted-foreground hover:text-primary transition-colors">
+            <a href="/blog" className="nav-link text-black hover:text-primary transition-colors">
+              Blog
+            </a>
+          </li>
+          <li>
+            <a href="#footer" className="nav-link text-black hover:text-primary transition-colors">
               Contact
             </a>
           </li>
@@ -63,16 +68,19 @@ export function Navbar() {
       {/* Mobile menu */}
       <div className={`mobile-menu mt-3 max-w-7xl mx-auto px-6 ${open ? "block" : "hidden"}`}>
         <div className="glass rounded-2xl p-4 flex flex-col gap-3">
-          <a href="#services" className="block text-foreground font-medium py-2" onClick={() => setOpen(false)}>
+          <a href="#services" className="block text-black font-medium py-2" onClick={() => setOpen(false)}>
             Services
           </a>
-          <a href="#gallery" className="block text-foreground font-medium py-2" onClick={() => setOpen(false)}>
+          <a href="#gallery" className="block text-black font-medium py-2" onClick={() => setOpen(false)}>
             Gallery
           </a>
-          <a href="#booking" className="block text-foreground font-medium py-2" onClick={() => setOpen(false)}>
+          <a href="#booking" className="block text-black font-medium py-2" onClick={() => setOpen(false)}>
             Bookings
           </a>
-          <a href="#footer" className="block text-foreground font-medium py-2" onClick={() => setOpen(false)}>
+          <a href="/blog" className="block text-black font-medium py-2" onClick={() => setOpen(false)}>
+            Blog
+          </a>
+          <a href="#footer" className="block text-black font-medium py-2" onClick={() => setOpen(false)}>
             Contact
           </a>
         </div>
