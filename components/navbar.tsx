@@ -40,7 +40,7 @@ export function Navbar() {
             </a>
           </li>
           <li>
-            <a href="#footer" className="nav-link text-black hover:text-primary transition-colors">
+            <a href="#booking" className="nav-link text-black hover:text-primary transition-colors">
               Contact
             </a>
           </li>
