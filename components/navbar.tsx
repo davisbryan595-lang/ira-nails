@@ -18,7 +18,7 @@ export function Navbar() {
         </div>
 
         {/* Desktop links */}
-        <ul className="nav-links hidden md:flex items-center gap-6">
+        <ul className="nav-links hidden md:flex items-center gap-6 scroll-smooth">
           <li>
             <a href="#services" className="nav-link text-black hover:text-primary transition-colors">
               Services
